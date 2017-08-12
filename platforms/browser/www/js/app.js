@@ -9,18 +9,10 @@
         $scope.version = "1.0.0(Beta)";
         $scope.isOpen = false;
 
-        $scope.toggleLeft = buildToggler('left');
-        // $scope.toggleRight = buildToggler('right');
 
-        function buildToggler(componentId) {
-            return function() {
-                $mdSidenav(componentId).toggle();
-                $scope.isOpen = true;
-            };
-        }
     };
 
-    var myApp = angular.module('myApp',['ui.router','ngMaterial'])
+    var myApp = angular.module('myApp',['ui.router','ngMaterial','common'])
         .controller('myAppCtrl',['$scope','$mdSidenav', myAppCtrl])
         .config(function ($stateProvider, $urlRouterProvider) {
             $urlRouterProvider.otherwise('/');
@@ -42,6 +34,13 @@
                     url:'/message',
                     views:{
                         'content': {templateUrl:"partials/components/messages/messages.html"}
+
+                    }
+                })
+                .state('notification',{
+                    url:'/notification',
+                    views:{
+                        'content': {template:""}
 
                     }
                 })

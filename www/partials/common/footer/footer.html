@@ -1,37 +1,10 @@
 <div class="md-whiteframe-3dp" layout>
-    <div flex="20" layout layout-align="center center">
-        <md-button class="md-icon-button" ui-sref="home">
+    <div flex="20" layout layout-align="center center" ng-repeat="menu in footerMenuItems">
+        <md-button class="md-icon-button" ui-sref="{{menu.url}}" ng-click="selectTab($index)" ng-class="{'active':menu.selected}">
             <md-icon>
-                <i class="fa fa-home"></i>
+                <i class="fa {{menu.icon}}"></i>
             </md-icon>
         </md-button>
-    </div>
-    <div flex="20" layout layout-align="center center">
-        <md-button class="md-icon-button" ui-sref="messages">
-            <md-icon>
-                <i class="fa fa-comments"></i>
-            </md-icon>
-        </md-button>
-    </div>
-    <div flex="20" layout layout-align="center center">
-        <md-button class="md-icon-button" >
-            <md-icon>
-                <i class="fa fa-search"></i>
-            </md-icon>
-        </md-button>
-    </div>
-    <div flex="20" layout layout-align="center center">
-        <md-button class="md-icon-button" >
-            <md-icon>
-                <i class="fa fa-bell"></i>
-            </md-icon>
-        </md-button>
-    </div>
-    <div flex="20" layout layout-align="center center">
-        <md-button class="md-icon-button" ui-sref="general">
-            <md-icon>
-                <i class="fa fa-gear"></i>
-            </md-icon>
-        </md-button>
+        <span>{{isActive}}</span>
     </div>
 </div>

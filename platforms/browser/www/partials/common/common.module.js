@@ -3,5 +3,5 @@
  */
 
 (function () {
-  angular.module('common',['']);
+  angular.module('common',['common.header', 'common.footer']);
 }())

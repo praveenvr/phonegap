@@ -8,7 +8,7 @@
 
         <h2 flex md-truncate>First App</h2>
 
-        <md-button class="md-icon-button" aria-label="Favorite">
+        <md-button class="md-icon-button" aria-label="User" ng-click="toggleRight()">
             <md-icon>
                 <i class="fa fa-user"></i>
             </md-icon>
@@ -17,7 +17,7 @@
     </div>
 </md-toolbar>
 
-<search-bar layout-padding class="md-whiteframe-2dp">
+<search-bar class="md-whiteframe-2dp" ng-show="isSearchTrigger">
     <form action="" layout layout-align="start center" layout-fill>
         <md-input-container layout flex>
             <label for="">Search</label>
@@ -30,3 +30,4 @@
         </md-button>
     </form>
 </search-bar>
+
