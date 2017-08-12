@@ -39,7 +39,7 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
     <link rel="stylesheet" href="css/angular-material.min.css">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
     <link href="css/font-awesome.min.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -49,24 +49,12 @@
 <body ng-controller="myAppCtrl">
     <div class="app" ng-class="{'no-scroll':isOpen}">
         <header ng-include="'partials/common/header/header.html'"></header>
-        <!--<header ui-view="header"></header>-->
-        <div ui-view="sidenav"></div>
         <div ng-include="'partials/common/sidenav/sidenav.html'"></div>
         <div class="view-list" ui-view="content"></div>
-        <!--<footer ng-include="'partials/common/footer/footer.html'"></footer>-->
-        <footer ui-view="footer"></footer>
-
-        <!--<div ui-view>-->
-
-        <!--</div>-->
-        <!--<h2>{{title}}</h2>-->
-        <!--<h3>{{author}}</h3>-->
-        <!--<h5>{{version}}</h5>-->
-        <!--<div id="deviceready" class="blink">-->
-            <!--<p class="event listening">Connecting to Device</p>-->
-            <!--<p class="event received">Device is Ready</p>-->
-        <!--</div>-->
+        <footer ng-include="'partials/common/footer/footer.html'"></footer>
     </div>
+
+
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="js/angular.min.js"></script>
@@ -80,8 +68,8 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
     <script src="js/app.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js" ></script>
+    <!--<script src="js/jquery-3.2.1.min.js"></script>-->
+    <!--<script src="js/bootstrap.min.js" ></script>-->
     <script type="text/javascript">
         app.initialize();
     </script>

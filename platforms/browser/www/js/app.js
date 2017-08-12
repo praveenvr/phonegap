@@ -29,38 +29,26 @@
                 .state('Default',{
                     url:'/',
                     views:{
-                        'header' :{templateUrl:"partials/common/header/header.html"},
-                        'sidenav':{templateUrl: "partials/common/sidenav/sidenav.html"},
-                        'content':{templateUrl: "partials/components/items/items_list.html"},
-                        'footer':{templateUrl:"partials/common/footer/footer.html"}
+                        'content':{templateUrl: "partials/components/items/items_list.html"}
                     }
                 })
                 .state('home',{
                     url:'/home',
                     views:{
-                        'header' :{templateUrl:"partials/common/header/header.html"},
-                        'sidenav':{templateUrl: "partials/common/sidenav/sidenav.html"},
-                        'content':{templateUrl: "partials/components/items/items_list.html"},
-                        'footer':{templateUrl:"partials/common/footer/footer.html"}
+                        'content':{templateUrl: "partials/components/items/items_list.html"}
                     }
                 })
                 .state('messages',{
                     url:'/message',
                     views:{
-                        'header' :{templateUrl:"partials/common/header/header.html"},
-                        'sidenav':{templateUrl: "partials/common/sidenav/sidenav.html"},
-                        'content': {templateUrl:"partials/components/messages/messages.html"},
-                        'footer':{templateUrl:"partials/common/footer/footer.html"}
+                        'content': {templateUrl:"partials/components/messages/messages.html"}
 
                     }
                 })
                 .state('general',{
                     url:'/general',
                     views:{
-                        'header' :{templateUrl:"partials/common/header/header.html"},
-                        'sidenav':{templateUrl: "partials/common/sidenav/sidenav.html"},
-                        'content': {templateUrl:"partials/components/forms/general_settings/general_settings.html"},
-                        'footer':{templateUrl:"partials/common/footer/footer.html"}
+                        'content': {templateUrl:"partials/components/forms/general_settings/general_settings.html"}
 
                     }
                 });
